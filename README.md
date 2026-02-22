@@ -23,7 +23,7 @@ It has a clean (cli) interface JUST to free up space and remove unnecessary (tem
 ## Download
 
 - [Exe Release](https://github.com/cinaxdev/cleantemp/releases/download/v2.0.0-stable/cleantemp.exe)  
-- [Source code](https://github.com/cinax/cleantemp)  
+- [Source code](https://github.com/cinaxdev/cleantemp)  
 
 ## Reqs
 
