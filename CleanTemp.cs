@@ -1,4 +1,11 @@
-﻿using System;
+/*
+https://github.com/cinaxdev/cleantemp/
+do not edit anything except "ConsoleColor.COLORNAME" if you dont know what you're doing
+i was tired while doing it, this may contain minor bugs
+made just for fun and improving myself!
+:D
+*/
+using System;
 using System.IO;
 using System.Security.Principal;
 using System.Diagnostics;
@@ -16,7 +23,7 @@ class CleanTemp
 
         while (true)
         {
-            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.ForegroundColor = ConsoleColor.Cyan; // you can change color of "cleantemp >" by editing "ConsoleColor.Cyan" (like ConsoleColor.Red or ConsoleColor.Yellow). you can also do this to other lines that has this.
             Console.Write("cleantemp > ");
             Console.ResetColor();
             string input = args.Length > 0 ? args[0] : Console.ReadLine();
@@ -53,7 +60,7 @@ class CleanTemp
                     break;
 
                 case "credits":
-                    WriteColored("by cinax - https://github.com/cinaxdev/cleantemp", ConsoleColor.Blue);
+                    WriteColored("by cinax - https://github.com/cinaxdev/cleantemp", ConsoleColor.Blue); // please do not edit credits
                     break;
 
                 case "exit":
@@ -67,7 +74,7 @@ class CleanTemp
 
             if (prefetchSuccess || command == "cleantemp")
             {
-                WriteColored("Done, thanks for using!", ConsoleColor.Green);
+                WriteColored("Done, thanks for using!", ConsoleColor.Green); // kinda buggy, double check if you dont think it works
             }
 
             args = new string[0];
@@ -156,4 +163,5 @@ class CleanTemp
         Console.WriteLine(text);
         Console.ForegroundColor = original;
     }
+
 }
